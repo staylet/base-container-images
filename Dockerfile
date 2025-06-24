@@ -4,4 +4,5 @@ LABEL org.opencontainers.image.description="Container base images for streamline
 LABEL org.opencontainers.image.licenses=MIT
 # The LABEL org.opencontainers.image.source will be added at buildtime.
 
-RUN ["apt","update"]
+RUN apt update && apt install -y \
+    curl dnsutils iproute2
