@@ -5,4 +5,4 @@ LABEL org.opencontainers.image.licenses=MIT
 # The LABEL org.opencontainers.image.source will be added at buildtime.
 
 RUN apt update && apt install -y \
-    curl dnsutils iproute2
+    curl dnsutils iproute2 iputils-ping
